@@ -2,17 +2,6 @@
 
 `YOLOv8` using TensorRT accelerate !
 
----
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fatrox%2Fsync-dotenv%2Fbadge&style=flat)](https://github.com/triple-Mu/YOLOv8-TensorRT)
-[![Python Version](https://img.shields.io/badge/Python-3.8--3.10-FFD43B?logo=python)](https://github.com/triple-Mu/YOLOv8-TensorRT)
-[![img](https://badgen.net/badge/icon/tensorrt?icon=azurepipelines&label)](https://developer.nvidia.com/tensorrt)
-[![C++](https://img.shields.io/badge/CPP-11%2F14-yellow)](https://github.com/triple-Mu/YOLOv8-TensorRT)
-[![img](https://badgen.net/github/license/triple-Mu/YOLOv8-TensorRT)](https://github.com/triple-Mu/YOLOv8-TensorRT/blob/main/LICENSE)
-[![img](https://badgen.net/github/prs/triple-Mu/YOLOv8-TensorRT)](https://github.com/triple-Mu/YOLOv8-TensorRT/pulls)
-[![img](https://img.shields.io/github/stars/triple-Mu/YOLOv8-TensorRT?color=ccf)](https://github.com/triple-Mu/YOLOv8-TensorRT)
-
----
-
 
 # Prepare the environment
 
