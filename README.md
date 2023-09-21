@@ -1,7 +1,5 @@
-<br>
 # YOLOv8-TensorRT
 `YOLOv8` using TensorRT accelerate for faster inference
-</br>
 
 
 <br>
