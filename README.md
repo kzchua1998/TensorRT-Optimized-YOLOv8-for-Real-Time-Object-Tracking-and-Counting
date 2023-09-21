@@ -6,9 +6,11 @@
 # Demo 
 YOLOv8x-det TensorRT Engine + ByteTrack Inference with Torch `FPS: ~32`, `GPU-VRAM: ~410MiB`
 
-| Models               | TensorRT Optimized               | Cat pics               | Dog pics               |
+| Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| ![cat](images/cat.png) | ![dog](images/dog.png) | ![cat](images/cat.png) | ![dog](images/dog.png) |
+| YOLOv8-det + ByteTrack | Yes | ~32 | ~410MiB |
+| YOLOv8-det + ByteTrack | Yes | ~32 | ~410MiB |
+| YOLOv8-det + ByteTrack | Yes | ~32 | ~410MiB |
 
 ### Vehicle Counting 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639
