@@ -5,7 +5,7 @@
 
 
 
-# Results
+## Results
 
 
 - `object-detection`: ~88% `FPS`, ~390% `GPU-VRAM` improvement
@@ -22,7 +22,7 @@
 
 
 
-# Demo
+## Demo
 ### Vehicle Counting 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639
 
@@ -30,7 +30,7 @@ https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tra
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/26feac1a-f8ea-452e-982b-b7bcb09a59f8
 
 
-# Prepare the environment
+## Prepare the environment
 
 1. Install `CUDA` follow [`CUDA official website`](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#download-the-nvidia-cuda-toolkit).
 
@@ -62,7 +62,7 @@ If you have to use a lower version of `CUDA` and `TensorRT`, please read the rel
 
 
 
-# Export End2End ONNX with NMS
+## Export End2End ONNX with NMS
 
 You can export your YOLOv8 model weights from `ultralytics` with postprocess such as bbox decoder and `NMS` into ONNX model for both `detection` and `instance-segmentation` tasks.
 
@@ -105,7 +105,7 @@ You will get an onnx model whose prefix is the same as input weights.
 
 
 
-# Build End2End Engine from ONNX
+## Build End2End Engine from ONNX
 
 You can export TensorRT engine from ONNX by [`build.py` ](build.py).
 
@@ -134,7 +134,7 @@ You can modify `iou-thres` `conf-thres` `topk` by yourself.
 
 
 
-# Inference
+## Inference
 
 You can infer images with the engine by [`infer-det.py`](infer-det.py) .
 
@@ -159,7 +159,7 @@ python3 infer-det.py \
 - `--profile` : Profile the TensorRT engine.
 
 
-# Profile Your Engine
+## Profile Your Engine
 
 Profiling your engine enables you to identify and address performance bottlenecks, improve resource utilization, and tailor your model for specific deployment scenarios, ultimately leading to better inference performance and efficiency. If you want to profile the TensorRT engine:
 
