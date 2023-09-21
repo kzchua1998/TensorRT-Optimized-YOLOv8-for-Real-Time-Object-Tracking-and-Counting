@@ -1,11 +1,14 @@
 # YOLOv8-TensorRT
 
-`YOLOv8` using TensorRT accelerate !
+`YOLOv8` using TensorRT accelerate for faster inference
 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639
 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/26feac1a-f8ea-452e-982b-b7bcb09a59f8
 
+| Cat pics                            | Dog pics                            |
+| ----------------------------------- | ----------------------------------- |
+| https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639 | https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/26feac1a-f8ea-452e-982b-b7bcb09a59f8 |
 
 
 # Prepare the environment
