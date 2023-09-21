@@ -2,13 +2,14 @@
 
 `YOLOv8` using TensorRT accelerate for faster inference
 
+
+# Demo 
+YOLOv8x-det TensorRT Engine + ByteTrack Inference with Torch `FPS: ~32`, `GPU-VRAM: ~410MiB`
+### Vehicle Counting 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639
 
+### Human Tracking and Counting 
 https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/26feac1a-f8ea-452e-982b-b7bcb09a59f8
-
-| Cat pics                            | Dog pics                            |
-| ----------------------------------- | ----------------------------------- |
-| https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/d69381b0-a4e2-48d7-a681-0eee06676639 | https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting/assets/64066100/26feac1a-f8ea-452e-982b-b7bcb09a59f8 |
 
 
 # Prepare the environment
