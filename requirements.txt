@@ -6,6 +6,7 @@ opencv-python
 torch
 torchvision
 ultralytics
+supervision
 # tensorrt
 # cuda-python
 # pycuda
