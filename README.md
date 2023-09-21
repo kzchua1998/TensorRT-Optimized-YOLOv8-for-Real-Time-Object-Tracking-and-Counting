@@ -7,14 +7,12 @@
 - `object-detection`: ~88% `FPS`, ~390% `GPU-VRAM` improvement
 - `instance-segmnetation`: ~55% `FPS`, ~253% `GPU-VRAM` improvement
 
-<br>
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 |-- | :-: | :-: | :-: |
 | **YOLOv8x-det + ByteTrack** | ✅ | **~32** | **~410MiB** |
 | YOLOv8x-det + ByteTrack | ❌ | ~17 | ~1600MiB |
 | **YOLOv8x-seg** | ✅ | **~28** | **~657MiB** |
 | YOLOv8x-seg | ❌ | ~18 | ~1660MiB |
-</br>
 
 # Demo
 ### Vehicle Counting 
