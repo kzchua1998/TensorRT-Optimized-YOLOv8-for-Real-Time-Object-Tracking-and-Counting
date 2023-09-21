@@ -4,8 +4,8 @@
 
 
 # Results
-- `object detection`
-- `instance segmnetation`
+- `object-detection`: ~88% `FPS`, ~390% `GPU Memory efficiency` improvements
+- `instance-segmnetation`
 
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 |-- | :-: | :-: | :-: |
