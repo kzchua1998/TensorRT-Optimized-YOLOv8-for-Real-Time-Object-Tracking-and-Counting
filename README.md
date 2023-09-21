@@ -105,7 +105,7 @@ You will get an onnx model whose prefix is the same as input weights.
 
 
 
-# Build End2End Engine from ONNX using Python api
+# Build End2End Engine from ONNX
 
 You can export TensorRT engine from ONNX by [`build.py` ](build.py).
 
@@ -136,8 +136,6 @@ You can modify `iou-thres` `conf-thres` `topk` by yourself.
 
 # Inference
 
-## 1. Infer with python script
-
 You can infer images with the engine by [`infer-det.py`](infer-det.py) .
 
 Usage:
@@ -161,9 +159,9 @@ python3 infer-det.py \
 - `--profile` : Profile the TensorRT engine.
 
 
-# Profile your engine
+# Profile Your Engine
 
-Profiling your enigne enables you to identify and address performance bottlenecks, improve resource utilization, and tailor your model for specific deployment scenarios, ultimately leading to better inference performance and efficiency. If you want to profile the TensorRT engine:
+Profiling your engine enables you to identify and address performance bottlenecks, improve resource utilization, and tailor your model for specific deployment scenarios, ultimately leading to better inference performance and efficiency. If you want to profile the TensorRT engine:
 
 Usage:
 
