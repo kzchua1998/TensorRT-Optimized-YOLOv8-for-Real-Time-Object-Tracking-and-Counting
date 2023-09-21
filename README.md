@@ -33,15 +33,6 @@ Please use the latest `CUDA` and `TensorRT`, so that you can achieve the fastest
 
 If you have to use a lower version of `CUDA` and `TensorRT`, please read the relevant issues carefully !
 
-# Normal Usage
-
-If you get ONNX from origin [`ultralytics`](https://github.com/ultralytics/ultralytics) repo, you should build engine by yourself.
-
-You can only use the `c++` inference code to deserialize the engine and do inference.
-
-You can get more information in [`Normal.md`](docs/Normal.md) !
-
-Besides, other scripts won't work.
 
 # Export End2End ONNX with NMS
 
