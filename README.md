@@ -161,51 +161,6 @@ python3 infer-det.py \
 - `--device` : The CUDA deivce you use.
 - `--profile` : Profile the TensorRT engine.
 
-## 2. Infer with C++
-
-You can infer with c++ in [`csrc/detect/end2end`](csrc/detect/end2end) .
-
-### Build:
-
-Please set you own librarys in [`CMakeLists.txt`](csrc/detect/end2end/CMakeLists.txt) and modify `CLASS_NAMES` and `COLORS` in [`main.cpp`](csrc/detect/end2end/main.cpp).
-
-``` shell
-export root=${PWD}
-cd csrc/detect/end2end
-mkdir -p build && cd build
-cmake ..
-make
-mv yolov8 ${root}
-cd ${root}
-```
-
-Usage:
-
-``` shell
-# infer image
-./yolov8 yolov8s.engine data/bus.jpg
-# infer images
-./yolov8 yolov8s.engine data
-# infer video
-./yolov8 yolov8s.engine data/test.mp4 # the video path
-```
-
-# TensorRT Segment Deploy
-
-Please see more information in [`Segment.md`](docs/Segment.md)
-
-# TensorRT Pose Deploy
-
-Please see more information in [`Pose.md`](docs/Pose.md)
-
-# DeepStream Detection Deploy
-
-See more in [`README.md`](csrc/deepstream/README.md)
-
-# Jetson Deploy
-
-Only test on `Jetson-NX 4GB`.
-See more in [`Jetson.md`](docs/Jetson.md)
 
 # Profile you engine
 
@@ -217,36 +172,3 @@ Usage:
 python3 trt-profile.py --engine yolov8s.engine --device cuda:0
 ```
 
-# Refuse To Use PyTorch for Model Inference !!!
-
-If you need to break away from pytorch and use tensorrt inference,
-you can get more information in [`infer-det-without-torch.py`](infer-det-without-torch.py),
-the usage is the same as the pytorch version, but its performance is much worse.
-
-You can use `cuda-python` or `pycuda` for inference.
-Please install by such command:
-
-```shell
-pip install cuda-python
-# or
-pip install pycuda
-```
-
-Usage:
-
-``` shell
-python3 infer-det-without-torch.py \
---engine yolov8s.engine \
---imgs data \
---show \
---out-dir outputs \
---method cudart
-```
-
-#### Description of all arguments
-
-- `--engine` : The Engine you export.
-- `--imgs` : The images path you want to detect.
-- `--show` : Whether to show detection results.
-- `--out-dir` : Where to save detection results images. It will not work when use `--show` flag.
-- `--method` : Choose `cudart` or `pycuda`, default is `cudart`.
