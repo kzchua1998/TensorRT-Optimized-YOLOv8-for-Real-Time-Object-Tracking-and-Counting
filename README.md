@@ -4,7 +4,8 @@
 
 
 # Results
-YOLOv8x-det TensorRT Engine + ByteTrack Inference with Torch `FPS: ~32`, `GPU-VRAM: ~410MiB`
+- `object detection`
+- `instance segmnetation`
 
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 |-- | :-: | :-: | :-: |
