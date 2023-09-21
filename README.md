@@ -2,13 +2,12 @@
 `YOLOv8` using TensorRT accelerate for faster inference
 
 
-<br>
 # Results
 
 - `object-detection`: ~88% `FPS`, ~390% `GPU-VRAM` improvement
 - `instance-segmnetation`: ~55% `FPS`, ~253% `GPU-VRAM` improvement
 
-
+<br>
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 |-- | :-: | :-: | :-: |
 | **YOLOv8x-det + ByteTrack** | ✅ | **~32** | **~410MiB** |
