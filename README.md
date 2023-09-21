@@ -161,9 +161,9 @@ python3 infer-det.py \
 - `--profile` : Profile the TensorRT engine.
 
 
-# Profile you engine
+# Profile your engine
 
-If you want to profile the TensorRT engine:
+Profiling your enigne enables you to identify and address performance bottlenecks, improve resource utilization, and tailor your model for specific deployment scenarios, ultimately leading to better inference performance and efficiency. If you want to profile the TensorRT engine:
 
 Usage:
 
