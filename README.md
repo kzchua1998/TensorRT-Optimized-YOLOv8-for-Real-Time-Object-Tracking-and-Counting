@@ -10,8 +10,7 @@
 
 - `object-detection`: ~88% `FPS`, ~390% `VRAM` improvement
 - `instance-segmnetation`: ~55% `FPS`, ~253% `VRAM` improvement
-- 
-___________________
+
 
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 |-- | :-: | :-: | :-: |
