@@ -8,7 +8,7 @@ YOLOv8x-det TensorRT Engine + ByteTrack Inference with Torch `FPS: ~32`, `GPU-VR
 
 | Models               | TensorRT Optimized               | FPS              | GPU-VRAM             |
 | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| **YOLOv8x-det + ByteTrack** | **Yes** | **~32** | **~410MiB** |
+| ==**YOLOv8x-det + ByteTrack**== | **Yes** | **~32** | **~410MiB** |
 | YOLOv8x-det + ByteTrack | No | ~17 | ~1600MiB |
 | **YOLOv8x-seg** | **Yes** | **~28** | **~657MiB** |
 | YOLOv8x-seg | No | ~18 | ~1660MiB |
