@@ -34,12 +34,25 @@ Please use the latest `CUDA` and `TensorRT`, so that you can achieve the fastest
 If you have to use a lower version of `CUDA` and `TensorRT`, please read the relevant issues carefully !
 
 
+
 # Export End2End ONNX with NMS
 
-You can export your onnx model by `ultralytics` API and add postprocess such as bbox decoder and `NMS` into ONNX model at the same time.
+You can export your YOLOv8 model weights from `ultralytics` with postprocess such as bbox decoder and `NMS` into ONNX model for both `detection` and `instance-segmentation` tasks.
 
 ``` shell
-python3 export-det.py \
+python export-det.py \
+--weights yolov8s.pt \
+--iou-thres 0.65 \
+--conf-thres 0.25 \
+--topk 100 \
+--opset 11 \
+--sim \
+--input-shape 1 3 640 640 \
+--device cuda:0
+```
+
+``` shell
+python export-seg.py \
 --weights yolov8s.pt \
 --iou-thres 0.65 \
 --conf-thres 0.25 \
