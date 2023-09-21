@@ -76,8 +76,9 @@ python export-seg.py \
 
 You will get an onnx model whose prefix is the same as input weights.
 
-# Build End2End Engine from ONNX
-### 1. Build Engine by TensorRT ONNX Python api
+
+
+# Build End2End Engine from ONNX using Python api
 
 You can export TensorRT engine from ONNX by [`build.py` ](build.py).
 
@@ -104,29 +105,7 @@ python3 build.py \
 
 You can modify `iou-thres` `conf-thres` `topk` by yourself.
 
-### 2. Export Engine by Trtexec Tools
 
-You can export TensorRT engine by [`trtexec`](https://github.com/NVIDIA/TensorRT/tree/main/samples/trtexec) tools.
-
-Usage:
-
-``` shell
-/usr/src/tensorrt/bin/trtexec \
---onnx=yolov8s.onnx \
---saveEngine=yolov8s.engine \
---fp16
-```
-
-**If you installed TensorRT by a debian package, then the installation path of `trtexec`
-is `/usr/src/tensorrt/bin/trtexec`**
-
-**If you installed TensorRT by a tar package, then the installation path of `trtexec` is under the `bin` folder in the path you decompressed**
-
-# Build TensorRT Engine by TensorRT API
-
-Please see more information in [`API-Build.md`](docs/API-Build.md)
-
-***Notice !!!*** We don't support YOLOv8-seg model now !!!
 
 # Inference
 
