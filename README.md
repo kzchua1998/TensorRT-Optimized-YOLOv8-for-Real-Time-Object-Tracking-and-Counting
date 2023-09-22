@@ -1,4 +1,4 @@
-# YOLOv8-TensorRT
+# TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tracking-and-Counting
 `YOLOv8` using TensorRT accelerate for faster inference
 
 
