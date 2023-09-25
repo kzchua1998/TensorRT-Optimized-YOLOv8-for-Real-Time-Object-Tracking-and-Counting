@@ -46,11 +46,6 @@ https://github.com/kzchua1998/TensorRT-Optimized-YOLOv8-for-Real-Time-Object-Tra
 
 5. Prepare your own PyTorch weight such as `yolov8s.pt` or `yolov8s-seg.pt`.
 
-***NOTICE:***
-
-Please use the latest `CUDA` and `TensorRT`, so that you can achieve the fastest speed !
-
-If you have to use a lower version of `CUDA` and `TensorRT`, please read the relevant issues carefully !
 
 
 
@@ -120,32 +115,6 @@ python3 build.py \
 - `--device` : The CUDA deivce you export engine .
 
 You can modify `iou-thres` `conf-thres` `topk` by yourself.
-
-
-
-# Inference
-
-You can infer images with the engine by [`infer-det.py`](infer-det.py) .
-
-Usage:
-
-``` shell
-python3 infer-det.py \
---engine yolov8s.engine \
---imgs data \
---show \
---out-dir outputs \
---device cuda:0
-```
-
-#### Description of all arguments
-
-- `--engine` : The Engine you export.
-- `--imgs` : The images path you want to detect.
-- `--show` : Whether to show detection results.
-- `--out-dir` : Where to save detection results images. It will not work when use `--show` flag.
-- `--device` : The CUDA deivce you use.
-- `--profile` : Profile the TensorRT engine.
 
 
 # Profile Your Engine
